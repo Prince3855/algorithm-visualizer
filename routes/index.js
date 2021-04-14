@@ -6,9 +6,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* GET home page. */
-router.get('/bubble-sort', function(req, res, next) {
-  res.render('./sorting/bubble-sort', { title: 'Express' });
-});
-
 module.exports = router;

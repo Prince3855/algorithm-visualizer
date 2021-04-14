@@ -7,3 +7,9 @@
 
 ### Run Project
 npm start
+
+Bubble sort - Henil
+Selection sort - Krenil
+Insertion sort - Keyur
+Merge Sort - krunal
+shellsort - prince
