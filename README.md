@@ -8,8 +8,10 @@
 ### Run Project
 npm start
 
-Bubble sort - Henil
-Selection sort - Krenil
-Insertion sort - Keyur
-Merge Sort - krunal
-shellsort - prince
+### Work Assign
+#### Sorting Algorithms
+1. Bubble sort - Henil
+2. Selection sort - Krenil
+3. Insertion sort - Keyur
+4. Merge Sort - krunal
+5. shellsort - prince
