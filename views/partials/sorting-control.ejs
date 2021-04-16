@@ -1,0 +1,49 @@
+<!-- Sorting Control -->
+<div class="container-fluid  px-5 py-2 mt-1 bg-dark text-white">
+
+    <div class="d-grid gap-2">
+        <h4 class="text-center my-1"><%= title %> Sort</h4>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label for="size" class="form-label">Array Size</label>
+            <input type="range" class="form-range" min="20" max="300" step="5" id="size" value="25" />
+        </div>
+        <div class="col-2">
+            <label for="speed" class="form-label">Speed</label>
+            <input type="range" class="form-range" min="0" max="5" step="1" id="speed">
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <button class="btn btn-outline-light" type="button" id="generate">Generate New Array</button>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <button class="btn btn-outline-light" type="button" id="reset" disabled>Reset</button>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <button class="btn btn-outline-light" type="button" id="sort">Start Sorting</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add sorting algorithms script -->
+<% if(title==='Bubble' ){ %>
+    <script src="/javascripts/sorting/bubble-sort.js"></script>
+<% } %>
+
+<% if(title==='Merge' ){ %>
+    <script src="/javascripts/sorting/merge-sort.js"></script>
+<% } %>
+
+<% if(title==='Insertion' ){ %>
+    <script src="/javascripts/sorting/insertion-sort.js"></script>
+<% } %>
+
+<% if(title==='Selection' ){ %>
+    <script src="/javascripts/sorting/selection-sort.js"></script>
+<% } %>
