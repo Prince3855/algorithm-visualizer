@@ -70,4 +70,9 @@ function getDelay() {
 // Sorting
 sortBtn.addEventListener('click', () => {
   bubble_sort();
+  // selection_sort();
+})
+sortBtn.addEventListener('click', () => {
+  // bubble_sort();
+  selection_sort();
 })
