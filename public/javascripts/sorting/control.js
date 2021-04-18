@@ -1,7 +1,7 @@
 let array_size = 20;
 let div_array = [];
 let div_height = [];
-let speed = 0, delay = 5;
+let speed = 0, delay = 200;
 
 // Select all elements
 let container = document.getElementById('main');
@@ -69,10 +69,19 @@ function getDelay() {
 
 // Sorting
 sortBtn.addEventListener('click', () => {
-  bubble_sort();
-  // selection_sort();
-})
-sortBtn.addEventListener('click', () => {
-  // bubble_sort();
-  selection_sort();
+  let value = sortBtn.value;
+  switch(value){
+    case 'Bubble': 
+      bubble_sort();
+      break;
+    case 'Selection':
+      selection_sort();
+      break;
+    case 'Merge':
+      merge_sort();
+      break;
+    case 'Insertion':
+      insertion_sort();
+      break;
+  }
 })
