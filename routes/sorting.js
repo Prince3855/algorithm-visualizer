@@ -21,4 +21,9 @@ router.get('/merge-sort', function (req, res, next) {
     res.render('./sorting/sort-now', { title: 'Merge' });
 });
 
+/* GET Heap Sort */
+router.get('/heap-sort', function (req, res, next) {
+    res.render('./sorting/sort-now', { title: 'Heap' });
+});
+
 module.exports = router;

@@ -1,7 +1,7 @@
 let array_size = 20;
 let div_array = [];
 let div_height = [];
-let speed = 0, delay = 200;
+let speed = 0, delay = 30, st_delay = 0;
 
 // Select all elements
 let container = document.getElementById('main');
@@ -55,9 +55,11 @@ generateArrayBtn.addEventListener('click', () => {
 
 // update divs
 function div_update(position, height, color) {
-  div_array[position].style.backgroundColor = color;
-  div_array[position].style.height = `${height}%`;
-  div_height[position] = height;
+  setTimeout(() => {
+    div_array[position].style.backgroundColor = color;
+    div_array[position].style.height = `${height}%`;
+    div_height[position] = height;
+  }, st_delay += delay);
 }
 
 // delay function
@@ -70,8 +72,8 @@ function getDelay() {
 // Sorting
 sortBtn.addEventListener('click', () => {
   let value = sortBtn.value;
-  switch(value){
-    case 'Bubble': 
+  switch (value) {
+    case 'Bubble':
       bubble_sort();
       break;
     case 'Selection':
@@ -82,6 +84,9 @@ sortBtn.addEventListener('click', () => {
       break;
     case 'Insertion':
       insertion_sort();
+      break;
+    case 'Heap':
+      heap_sort();
       break;
   }
 })

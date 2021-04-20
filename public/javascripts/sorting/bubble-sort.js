@@ -1,6 +1,7 @@
 
 // Bubble sort algorithm
-async function bubble_sort() {
+function bubble_sort() {
+    st_delay=0;
 
     for (var i = 0; i < array_size - 1; i++) {
         for (var j = 0; j < array_size - i - 1; j++) {
@@ -12,12 +13,12 @@ async function bubble_sort() {
                 var temp = div_height[j];
                 div_height[j] = div_height[j + 1];
                 div_height[j + 1] = temp;
-                await getDelay();
+                
                 div_update(j, div_height[j], "red");//Height update
                 div_update(j + 1, div_height[j + 1], "red");//Height update
 
             }
-            await getDelay();
+
             div_update(j, div_height[j], "blue");//Color updat
         }
         div_update(j, div_height[j], "green");//Color update
