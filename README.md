@@ -12,10 +12,14 @@
 npm start
 ```
 
-### Work Assign
+### Algorithm
 #### Sorting Algorithms
-1. Bubble sort - Prince
-2. Selection sort - Krenil
-3. Insertion sort - Keyur
-4. Merge Sort - krunal
-5. shellsort,heap - Henil
+1. Bubble sort
+2. Selection sort
+3. Insertion sort
+4. Merge Sort
+5. shellsort,heap
+
+#### Path Finding Algorithms
+1. Using DFS
+2. Using BFS
