@@ -3,27 +3,27 @@ var router = express.Router();
 
 /* GET Bubble Sort */
 router.get('/bubble-sort', function (req, res, next) {
-    res.render('./sorting/sort-now', { title: 'Bubble' });
+    res.render('./sort-now', { title: 'Bubble' });
 });
 
 /* GET Selection Sort */
 router.get('/selection-sort', function (req, res, next) {
-    res.render('./sorting/sort-now', { title: 'Selection' });
+    res.render('./sort-now', { title: 'Selection' });
 });
 
 /* GET Insertion Sort */
 router.get('/insertion-sort', function (req, res, next) {
-    res.render('./sorting/sort-now', { title: 'Insertion' });
+    res.render('./sort-now', { title: 'Insertion' });
 });
 
 /* GET Merge Sort */
 router.get('/merge-sort', function (req, res, next) {
-    res.render('./sorting/sort-now', { title: 'Merge' });
+    res.render('./sort-now', { title: 'Merge' });
 });
 
 /* GET Heap Sort */
 router.get('/heap-sort', function (req, res, next) {
-    res.render('./sorting/sort-now', { title: 'Heap' });
+    res.render('./sort-now', { title: 'Heap' });
 });
 
 module.exports = router;

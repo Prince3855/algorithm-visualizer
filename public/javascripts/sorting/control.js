@@ -1,7 +1,8 @@
-let array_size = 20;
+let array_size = 15;
 let div_array = [];
 let div_height = [];
-let speed = 0, delay = 30, st_delay = 0;
+let speed = 3, delay = 50, st_delay = 0;
+// 1 5 50 100 500 1000
 
 // Select all elements
 let container = document.getElementById('main');
@@ -39,8 +40,12 @@ window.onload = page_load();
 
 // speed change
 speedEle.addEventListener('input', () => {
+  let sp = [1000,500,100,50,5,1]
   speed = speedEle.value;
+  delay = sp[parseInt(speed)];
+  console.log(delay)
 });
+
 
 // Array Size Change
 sizeEle.addEventListener('input', () => {
@@ -53,6 +58,12 @@ generateArrayBtn.addEventListener('click', () => {
   generate_array();
 })
 
+// reset button click
+resetBtn.addEventListener('click',()=>{
+  location.reload();
+})
+
+
 // update divs
 function div_update(position, height, color) {
   setTimeout(() => {
@@ -62,15 +73,12 @@ function div_update(position, height, color) {
   }, st_delay += delay);
 }
 
-// delay function
-function getDelay() {
-  return new Promise(resolve => setTimeout(resolve, delay));
-}
 
-
-
-// Sorting
+// select Sorting Algo
 sortBtn.addEventListener('click', () => {
+
+  take_control();
+
   let value = sortBtn.value;
   switch (value) {
     case 'Bubble':
@@ -90,3 +98,11 @@ sortBtn.addEventListener('click', () => {
       break;
   }
 })
+
+// while sorting take control from user
+function take_control(){
+  speedEle.disabled = true;
+  sizeEle.disabled = true;
+  generateArrayBtn.disabled = true;
+  sortBtn.disabled = true;
+}

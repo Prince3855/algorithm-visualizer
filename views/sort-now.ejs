@@ -1,21 +1,21 @@
-<%- include("../partials/header.ejs"); %>
+<%- include("./partials/header.ejs"); %>
 
   <!-- Sorting Controls -->
-  <div class="container-fluid  px-5 py-2 mt-1 bg-dark text-white">
+  <div class="container-fluid  px-5 py-2 mt-1 text-white" style="background-color: #34495e;">
 
     <div class="d-grid gap-2">
-      <h4 class="text-center my-1">
+      <h5 class="text-center my-2">
         <%= title %> Sort
-      </h4>
+      </h5>
     </div>
-    <div class="row">
+    <div class="row d-flex justify-content-center">
       <div class="col-2">
         <label for="size" class="form-label">Array Size</label>
-        <input type="range" class="form-range" min="20" max="300" step="5" id="size" value="25" />
+        <input type="range" class="form-range" min="15" max="300" step="5" id="size" value="50" />
       </div>
       <div class="col-2">
         <label for="speed" class="form-label">Speed</label>
-        <input type="range" class="form-range" min="0" max="5" step="1" id="speed">
+        <input type="range" class="form-range" min="0" max="5" step="1" id="speed" value="3">
       </div>
       <div class="col-2">
         <div class="d-grid gap-2">
@@ -24,7 +24,7 @@
       </div>
       <div class="col-2">
         <div class="d-grid gap-2">
-          <button class="btn btn-outline-light" type="button" id="reset" disabled>Reset</button>
+          <button class="btn btn-outline-light" type="button" id="reset" >Reset</button>
         </div>
       </div>
       <div class="col-2">
@@ -62,4 +62,4 @@
 
   <script src="/javascripts/sorting/control.js"></script>
 
-<%- include("../partials/footer.ejs"); %>
+<%- include("./partials/footer.ejs"); %>

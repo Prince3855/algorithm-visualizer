@@ -1,0 +1,56 @@
+<%- include("./partials/header.ejs"); %>
+
+  <!-- Sorting Controls -->
+  <div class="container-fluid  px-5 py-2 mt-1 text-white" style="background-color: #34495e;">
+
+    <div class="d-grid gap-2">
+      <h5 class="text-center my-2">
+        Algorithm : <%= title %>
+      </h5>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-2 mx-1">
+        <label for="speed" class="form-label">Speed</label>
+        <input type="range" class="form-range" min="0" max="5" step="1" value="3" id="speed">
+      </div>
+      <div class="col-2 mx-1">
+        <div class="d-grid gap-2">
+          <button class="btn btn-outline-light" type="button" id="reset">Reset</button>
+        </div>
+      </div>
+      <div class="col-2 mx-1">
+        <div class="d-grid gap-2">
+          <button class="btn btn-outline-light" type="button" id="findPath" value="<%= title %>">Find Path</button>
+        </div>
+      </div>
+      <div class="col-2 mx-1">
+        <div class="d-grid gap-2">
+          <div class="alert alert-info py-2" role="alert">
+            Drag cursor to create Wall
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+      <div class="container bg-light" style="height: 71vh; display: flex; align-items: center; justify-content: center; color: rgb(180, 35, 156);" id="maindiv">
+        <table id="mainBoard">
+        </table>
+      </div>
+
+      <script src="/javascripts/path-finding/control.js"></script>
+
+      <!-- Add sorting algorithms script -->
+  <% if(title==='DFS' ){ %>
+    <script src="/javascripts/path-finding/dfs.js"></script>
+  <% } %>
+  <% if(title==='BFS' ){ %>
+    <script src="/javascripts/path-finding/bfs.js"></script>
+  <% } %>
+  <% if(title==='Shortest path using BFS' ){ %>
+    <script src="/javascripts/path-finding/sp-bfs.js"></script>
+  <% } %>
+
+  <%- include("./partials/footer.ejs"); %>
