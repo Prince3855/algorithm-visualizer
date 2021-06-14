@@ -24,5 +24,5 @@ npm start
 1. Using DFS
 2. Using BFS
 
-### Deploy on Heroku
+### Deployed on Heroku
  URL : https://algorithm-visualization-de.herokuapp.com/ 
