@@ -23,3 +23,8 @@ npm start
 #### Path Finding Algorithms
 1. Using DFS
 2. Using BFS
+
+### Deploy on Heroku
+```
+ URL : https://algorithm-visualization-de.herokuapp.com/
+``` 
