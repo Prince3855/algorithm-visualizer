@@ -7,6 +7,7 @@ var logger = require('morgan');
 var index = require('./routes/index');
 var sorting = require('./routes/sorting');
 var pathFinding = require('./routes/path-finding');
+var mazeGeneration = require('./routes/maze-generation');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/sorting', sorting);
 app.use('/path-finding', pathFinding);
+app.use('/maze-generation', mazeGeneration);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

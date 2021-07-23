@@ -12,7 +12,8 @@
 npm start
 ```
 
-### Algorithm
+### Algorithms
+
 #### Sorting Algorithms
 1. Bubble sort
 2. Selection sort
@@ -23,6 +24,9 @@ npm start
 #### Path Finding Algorithms
 1. Using DFS
 2. Using BFS (Shortest Path)
+
+#### Path Finding Algorithms
+1. Maze Generation Using DFS
 
 ### Deployed on Heroku
  URL : https://algorithm-visualization-de.herokuapp.com/ 
