@@ -34,15 +34,15 @@
   </div>
 
   
+  <!-- main container -->
+  <div class="container mt-2" style="height: 68vh; display: flex; align-items: center; justify-content: center;" id="maindiv">
+    <table id="mainBoard">
+    </table>
+  </div>
 
-      <div class="container mt-2" style="height: 68vh; display: flex; align-items: center; justify-content: center;" id="maindiv">
-        <table id="mainBoard">
-        </table>
-      </div>
+  <script src="/javascripts/path-finding/control.js"></script>
 
-      <script src="/javascripts/path-finding/control.js"></script>
-
-      <!-- Add sorting algorithms script -->
+  <!-- Add sorting algorithms script -->
   <% if(title==='DFS' ){ %>
     <script src="/javascripts/path-finding/dfs.js"></script>
   <% } %>
@@ -53,4 +53,6 @@
     <script src="/javascripts/path-finding/sp-bfs.js"></script>
   <% } %>
 
+
+  <!-- Footer -->
   <%- include("./partials/footer.ejs"); %>

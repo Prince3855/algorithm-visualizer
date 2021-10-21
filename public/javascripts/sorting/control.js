@@ -1,8 +1,9 @@
+// Global variables
 let array_size = 15;
 let div_array = [];
 let div_height = [];
 let speed = 3, delay = 50, st_delay = 0;
-// 1 5 50 100 500 1000
+// speed : 1 5 50 100 500 1000
 
 // Select all elements
 let container = document.getElementById('main');

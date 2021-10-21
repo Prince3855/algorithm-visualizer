@@ -1,4 +1,6 @@
 let container = document.querySelector('#maindiv');
+
+// set height and width of container
 let width = container.offsetWidth;
 let height = container.offsetHeight;
 
@@ -7,7 +9,7 @@ width = parseInt(width / 25);
 
 let mainBoard = document.querySelector('#mainBoard');
 
-
+// Global variables
 let rows = height, cols = width;
 let div_array = [rows];
 let status = [rows];
@@ -121,7 +123,6 @@ $(document).ready(function () {
        id=id.split("_");
        let r = parseInt(id[0]), c = parseInt(id[1]);
        if(status[r][c]==0) div_array[r][c].style.backgroundColor = "#34495e";
-      //  else div_array[r][c].style.backgroundColor = "white";
        status[r][c]=1;
     }
   });
