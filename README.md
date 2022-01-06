@@ -29,4 +29,4 @@ npm start
 1. Maze Generation Using DFS
 
 ### Deployed on Heroku
- URL : https://algorithm-visualization-de.herokuapp.com/ 
+ URL : https://algorithm-visualization-pmms.herokuapp.com/ 
